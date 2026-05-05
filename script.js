@@ -14,8 +14,8 @@ END:VCARD`;
     // Create the QR Code
     new QRCode(qrcodeContainer, {
         text: vcard,
-        width: 160,
-        height: 160,
+        width: 100,
+        height: 100,
         colorDark : "#0f172a", // Slate 900
         colorLight : "#ffffff",
         correctLevel : QRCode.CorrectLevel.M
