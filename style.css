@@ -1,3 +1,4 @@
+/* === VARIABLES === */
 :root {
     --bg-color: #0f172a; /* Slate 900 */
     --card-bg: rgba(30, 41, 59, 0.7); /* Slate 800 with opacity */
@@ -8,12 +9,14 @@
     --border-color: rgba(255, 255, 255, 0.1);
 }
 
+/* === RESET === */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* === BASE STYLES === */
 body {
     font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     background-color: var(--bg-color);
@@ -26,7 +29,7 @@ body {
     position: relative;
 }
 
-/* Background effects */
+/* === BACKGROUND EFFECTS === */
 .background-effects {
     position: absolute;
     top: 0;
@@ -69,7 +72,7 @@ body {
     100% { transform: translate(50px, 50px) scale(1.1); }
 }
 
-/* Card layout */
+/* === CARD LAYOUT === */
 .card {
     position: relative;
     z-index: 1;
@@ -142,6 +145,7 @@ h1 {
     line-height: 1.4;
 }
 
+/* === COMPONENTS: Contact Info === */
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -149,6 +153,7 @@ h1 {
     margin-bottom: 2rem;
 }
 
+/* === COMPONENTS: About Section === */
 .about-section {
     margin-bottom: 2rem;
     padding: 1.5rem;
@@ -163,6 +168,7 @@ h1 {
     line-height: 1.6;
 }
 
+/* === COMPONENTS: Expertise Sections === */
 .expertise-section {
     margin-bottom: 2rem;
     padding-top: 2rem;
@@ -202,6 +208,7 @@ h1 {
     color: var(--text-primary);
 }
 
+/* === COMPONENTS: Info Items === */
 .info-item {
     display: flex;
     align-items: center;
@@ -228,6 +235,7 @@ h1 {
     color: var(--accent);
 }
 
+/* === COMPONENTS: QR Code === */
 .qr-container {
     text-align: center;
 }
@@ -257,7 +265,7 @@ h1 {
     margin: 0 auto;
 }
 
-/* Animations */
+/* === ANIMATIONS === */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -267,13 +275,14 @@ h1 {
     animation: fadeIn 0.8s ease-out forwards;
 }
 
-/* Responsive */
+/* === RESPONSIVE === */
 @media (max-width: 640px) {
     .card {
         padding: 1.5rem;
     }
     
-    h1 {
+/* === TYPOGRAPHY === */
+h1 {
         font-size: 1.5rem;
     }
     

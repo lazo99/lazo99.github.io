@@ -1,11 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Generate vCard data
+    // Generate vCard data (v3.0 format for maximum compatibility)
     const vcard = `BEGIN:VCARD
 VERSION:3.0
 N:Lazo;Andrew;;;
 FN:Andrew Lazo
-TEL;TYPE=CELL:5106213091
+TITLE:Technical Support Engineer | Event Coordinator | Digital Media Specialist
+ORG:ARL LLC
+TEL;TYPE=CELL:(510) 621-3091
 EMAIL:lazo99@gmail.com
+ADR;TYPE=HOME:;;San Francisco Bay Area;CA;;;USA
+URL:https://lazo99.github.io
 END:VCARD`;
 
     // Initialize QR Code
