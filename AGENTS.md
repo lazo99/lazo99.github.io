@@ -1,6 +1,6 @@
 # ContactPage - Local Workspace Instructions & Agents
 
-This file extends the global workspace constraints defined in `../AGENTS.md` specifically for the **ContactPage** project.
+This file extends the global workspace constraints defined in `../PROTOCOLS.md` specifically for the **ContactPage** project.
 
 ## ContactPage Project Constraints
 
