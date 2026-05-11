@@ -1,3 +1,15 @@
+<!-- =================================================================
+  CONFIDENTIAL & PROPRIETARY
+
+  © 2026 Andrew Lazo. All rights reserved.
+
+  This software is proprietary and confidential. Unauthorized copying,
+  distribution, or use of this software, via any medium, is strictly 
+  prohibited without express written permission from the Architect.
+  
+  [INTERNAL_TRANSITION_MARKER: PROPRIETARY_V1]
+================================================================= -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +31,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="nav-toggle" style="position: absolute; top: 2rem; right: 2rem; display: flex; gap: 10px; z-index: 100;">
+        <a href="index.html" class="nav-btn active" style="padding: 8px 16px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-decoration: none; border: 1px solid var(--accent); background: var(--accent); color: #000;">Architect</a>
+        <a href="personal.html" class="nav-btn" style="padding: 8px 16px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-decoration: none; border: 1px solid var(--border-color); color: var(--text-secondary);">Personal</a>
+    </div>
+
     <div class="background-effects">
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
@@ -29,7 +46,7 @@
             <div class="avatar-placeholder">AL</div>
             <div class="profile-text">
                 <h1>Andrew Lazo</h1>
-                <p class="title">Technical Support Engineer | Event Coordinator | Digital Media Specialist</p>
+                <p class="title">Senior Solutions Architect | Compliance Officer | Event Coordinator</p>
             </div>
             <div class="qr-container">
                 <div id="qrcode"></div>
@@ -37,7 +54,7 @@
         </div>
         
         <section class="about-section">
-            <p>I am a versatile professional with over 15 years of experience bridging the gap between complex technical systems and high-touch customer service. My background spans from deep-tier technical support and hardware programming to large-scale event logistics and digital imaging. I pride myself on being a fast learner who is equally comfortable troubleshooting Linux-based servers as I am managing a quarter-million-dollar retail inventory.</p>
+            <p>I am a Senior Solutions Architect with over 15 years of experience bridging the gap between complex technical systems and high-touch customer service. Currently, I am the Lead Architect for the **CannaPOS** retail engine and the **AI Dispatch Intelligence** showcase. My background spans from deep-tier technical support and hardware programming to large-scale event logistics and regulatory compliance (DCC/METRC). I specialize in orchestrating AI-driven development workflows to build secure, scalable, and proprietary retail solutions.</p>
         </section>
         
         <div class="contact-info">
@@ -53,6 +70,13 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                 </span>
                 <span>lazo99@gmail.com</span>
+            </a>
+            
+            <a href="https://github.com/lazo99" class="info-item" target="_blank" rel="noopener" aria-label="View Andrew Lazo's GitHub">
+                <span class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </span>
+                <span>github.com/lazo99</span>
             </a>
             
             <a href="https://maps.google.com/?q=San+Francisco+Bay+Area,+CA" class="info-item" target="_blank" rel="noopener" aria-label="View Andrew Lazo's location: San Francisco Bay Area, CA">
@@ -88,6 +112,18 @@
                 <li><strong>Media Production:</strong> Extensive experience in live television production, including directing, videography, and non-linear editing for city administration and original programming.</li>
             </ul>
         </section>
+
+        <footer style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(0, 255, 136, 0.2); text-align: center;">
+            <p style="color: var(--accent); font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; font-weight: 600;">
+                Architect's Signature
+            </p>
+            <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 10px; font-style: italic;">
+                "This platform and all related proprietary subsystems were engineered via the AI-Orchestration Method. Every line of logic and architectural pivot was directed, audited, and approved by the Senior Architect."
+            </p>
+            <p style="color: var(--text-muted); font-size: 0.75rem; margin-top: 15px;">
+                &copy; 2026 Andrew Lazo. All Rights Reserved. | Proprietary & Confidential
+            </p>
+        </footer>
         
     </main>
 
