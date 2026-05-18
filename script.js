@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 VERSION:3.0
 N:Lazo;Andrew;;;
 FN:Andrew Lazo
-TITLE:Senior Solutions Architect | Compliance Officer | Event Coordinator
+TITLE:Senior Architect & Compliance Officer | Event Coordinator
 ORG:ARL LLC
 TEL;TYPE=CELL:(510) 621-3091
 EMAIL:lazo99@gmail.com
