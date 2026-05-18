@@ -15,115 +15,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrew Lazo | Technical Support Engineer | Event Coordinator | Digital Media Specialist</title>
-    <meta name="description" content="Andrew Lazo: Technical Support Engineer, Event Coordinator, Digital Media Specialist with 15+ years of experience bridging technical systems and customer service.">
+    <title>Andrew Lazo | Solutions Architect & Event Coordinator</title>
+    <meta name="description" content="Andrew Lazo: Senior Solutions Architect, Compliance Officer, and Event Coordinator. 15+ years of operational excellence.">
     <meta name="author" content="Andrew Lazo">
     
     <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Andrew Lazo | Technical Support Engineer | Event Coordinator | Digital Media Specialist">
-    <meta property="og:description" content="15+ years experience bridging technical systems and customer service. Former Head Coordinator at ARL LLC.">
+    <meta property="og:title" content="Andrew Lazo | Solutions Architect & Event Coordinator">
+    <meta property="og:description" content="15+ years experience bridging complex systems and customer service. Former Head Coordinator at ARL LLC.">
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://lazo99.github.io">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect rx='20' width='100' height='100' fill='%2360a5fa'/><text x='50' y='68' font-family='Arial,sans-serif' font-size='42' font-weight='bold' fill='%230a0f1a' text-anchor='middle'>AL</text></svg>" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="nav-toggle" style="position: absolute; top: 2rem; right: 2rem; display: flex; gap: 10px; z-index: 100;">
-        <a href="index.html" class="nav-btn active" style="padding: 8px 16px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-decoration: none; border: 1px solid var(--accent); background: var(--accent); color: #000;">Architect</a>
-        <a href="personal.html" class="nav-btn" style="padding: 8px 16px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-decoration: none; border: 1px solid var(--border-color); color: var(--text-secondary);">Personal</a>
+    <div class="nav-toggle">
+        <button class="nav-btn active" data-tab="architect">Architect</button>
+        <button class="nav-btn" data-tab="personal">Personal</button>
     </div>
 
     <div class="background-effects">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
+        <div id="blob1" class="blob blob-1"></div>
+        <div id="blob2" class="blob blob-2"></div>
     </div>
     
     <main class="card">
-        <div class="profile-header">
-            <div class="avatar-placeholder">AL</div>
-            <div class="profile-text">
-                <h1>Andrew Lazo</h1>
-                <p class="title">Senior Solutions Architect | Compliance Officer | Event Coordinator</p>
+        <!-- ARCHITECT TAB -->
+        <div id="architect-pane" class="tab-pane active">
+            <div class="profile-header">
+                <div class="avatar-placeholder">AL</div>
+                <div class="profile-text">
+                    <h1>Andrew Lazo</h1>
+                    <p class="title">Senior Solutions Architect | Compliance Officer | Event Coordinator</p>
+                </div>
+                <div class="qr-container">
+                    <div id="qrcode"></div>
+                </div>
             </div>
-            <div class="qr-container">
-                <div id="qrcode"></div>
+            
+            <section class="about-section">
+                <p>I am a Senior Solutions Architect with over 15 years of experience bridging the gap between complex technical systems and high-touch customer service. Currently, I am the Lead Architect for the **CannaPOS** retail engine and the **AI Dispatch Intelligence** showcase. My background spans from deep-tier technical support and hardware programming to large-scale event logistics and regulatory compliance (DCC/METRC). I specialize in orchestrating AI-driven development workflows to build secure, scalable, and proprietary retail solutions.</p>
+            </section>
+            
+            <div class="contact-info">
+                <a href="tel:5106213091" class="info-item" aria-label="Call Andrew Lazo at (510) 621-3091">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    </span>
+                    <span>(510) 621-3091</span>
+                </a>
+                
+                <a href="mailto:lazo99@gmail.com" class="info-item" aria-label="Email Andrew Lazo at lazo99@gmail.com">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </span>
+                    <span>lazo99@gmail.com</span>
+                </a>
+                
+                <a href="https://github.com/lazo99" class="info-item" target="_blank" rel="noopener" aria-label="View Andrew Lazo's GitHub">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </span>
+                    <span>github.com/lazo99</span>
+                </a>
+                
+                <a href="https://maps.google.com/?q=San+Francisco+Bay+Area,+CA" class="info-item" target="_blank" rel="noopener" aria-label="View Andrew Lazo's location: San Francisco Bay Area, CA">
+                    <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    </span>
+                    <span>San Francisco Bay Area, CA</span>
+                </a>
             </div>
-        </div>
-        
-        <section class="about-section">
-            <p>I am a Senior Solutions Architect with over 15 years of experience bridging the gap between complex technical systems and high-touch customer service. Currently, I am the Lead Architect for the **CannaPOS** retail engine and the **AI Dispatch Intelligence** showcase. My background spans from deep-tier technical support and hardware programming to large-scale event logistics and regulatory compliance (DCC/METRC). I specialize in orchestrating AI-driven development workflows to build secure, scalable, and proprietary retail solutions.</p>
-        </section>
-        
-        <div class="contact-info">
-            <a href="tel:5106213091" class="info-item" aria-label="Call Andrew Lazo at (510) 621-3091">
-                <span class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                </span>
-                <span>(510) 621-3091</span>
-            </a>
             
-            <a href="mailto:lazo99@gmail.com" class="info-item" aria-label="Email Andrew Lazo at lazo99@gmail.com">
-                <span class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                </span>
-                <span>lazo99@gmail.com</span>
-            </a>
+            <section class="expertise-section">
+                <h2>🛠️ Technical Expertise</h2>
+                <ul>
+                    <li><strong>Operating Systems:</strong> Proficient in Windows, macOS, and Linux (including LAMP stack environments).</li>
+                    <li><strong>IT Support:</strong> Experienced in Tier 1 technical support, network troubleshooting, and CRM administration (Salesforce, custom implementations).</li>
+                    <li><strong>Hardware:</strong> Skilled in assembling and programming proprietary hardware, as well as maintaining A/V equipment and precision tools.</li>
+                </ul>
+            </section>
             
-            <a href="https://github.com/lazo99" class="info-item" target="_blank" rel="noopener" aria-label="View Andrew Lazo's GitHub">
-                <span class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                </span>
-                <span>github.com/lazo99</span>
-            </a>
+            <section class="expertise-section">
+                <h2>📈 Project & Event Management</h2>
+                <ul>
+                    <li><strong>Event Logistics:</strong> Former Head Coordinator at ARL LLC, managing budgets, venue sourcing, and onsite coordination to maximize ROI.</li>
+                    <li><strong>Operational Excellence:</strong> Proven track record in overseeing significant sales volumes (+$300K quarterly) and managing teams for quality assurance.</li>
+                    <li><strong>Adaptability:</strong> Strong ability to prioritize tasks and meet deadlines in fast-paced, evolving environments.</li>
+                </ul>
+            </section>
             
-            <a href="https://maps.google.com/?q=San+Francisco+Bay+Area,+CA" class="info-item" target="_blank" rel="noopener" aria-label="View Andrew Lazo's location: San Francisco Bay Area, CA">
-                <span class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                </span>
-                <span>San Francisco Bay Area, CA</span>
-            </a>
-        </div>
-        
-        <section class="expertise-section">
-            <h2>🛠️ Technical Expertise</h2>
-            <ul>
-                <li><strong>Operating Systems:</strong> Proficient in Windows, macOS, and Linux (including LAMP stack environments).</li>
-                <li><strong>IT Support:</strong> Experienced in Tier 1 technical support, network troubleshooting, and CRM administration (Salesforce, custom implementations).</li>
-                <li><strong>Hardware:</strong> Skilled in assembling and programming proprietary hardware, as well as maintaining A/V equipment and precision tools.</li>
-            </ul>
-        </section>
-        
-        <section class="expertise-section">
-            <h2>📈 Project & Event Management</h2>
-            <ul>
-                <li><strong>Event Logistics:</strong> Former Head Coordinator at ARL LLC, managing budgets, venue sourcing, and onsite coordination to maximize ROI.</li>
-                <li><strong>Operational Excellence:</strong> Proven track record in overseeing significant sales volumes (+$300K quarterly) and managing teams for quality assurance.</li>
-                <li><strong>Adaptability:</strong> Strong ability to prioritize tasks and meet deadlines in fast-paced, evolving environments.</li>
-            </ul>
-        </section>
-        
-        <section class="expertise-section">
-            <h2>🎥 Creative & Digital Media</h2>
-            <ul>
-                <li><strong>Digital Imaging:</strong> Specialist in photography and videography, providing expert guidance on high-end camera gear and editing software.</li>
-                <li><strong>Media Production:</strong> Extensive experience in live television production, including directing, videography, and non-linear editing for city administration and original programming.</li>
-            </ul>
-        </section>
+            <section class="expertise-section">
+                <h2>🎥 Creative & Digital Media</h2>
+                <ul>
+                    <li><strong>Digital Imaging:</strong> Specialist in photography and videography, providing expert guidance on high-end camera gear and editing software.</li>
+                    <li><strong>Media Production:</strong> Extensive experience in live television production, including directing, videography, and non-linear editing for city administration and original programming.</li>
+                </ul>
+            </section>
 
-        <footer style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(0, 255, 136, 0.2); text-align: center;">
-            <p style="color: var(--accent); font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; font-weight: 600;">
-                Architect's Signature
-            </p>
-            <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 10px; font-style: italic;">
-                "This platform and all related proprietary subsystems were engineered via the AI-Orchestration Method. Every line of logic and architectural pivot was directed, audited, and approved by the Senior Architect."
-            </p>
-            <p style="color: var(--text-muted); font-size: 0.75rem; margin-top: 15px;">
-                &copy; 2026 Andrew Lazo. All Rights Reserved. | Proprietary & Confidential
-            </p>
-        </footer>
+            <footer style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(0, 255, 136, 0.2); text-align: center;">
+                <p style="color: var(--accent); font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase; font-weight: 600;">
+                    Architect's Signature
+                </p>
+                <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 10px; font-style: italic;">
+                    "This platform and all related proprietary subsystems were engineered via the AI-Orchestration Method. Every line of logic and architectural pivot was directed, audited, and approved by the Senior Architect."
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.75rem; margin-top: 15px;">
+                    &copy; 2026 Andrew Lazo. All Rights Reserved. | Proprietary & Confidential
+                </p>
+            </footer>
+        </div>
+
+        <!-- PERSONAL TAB -->
+        <div id="personal-pane" class="tab-pane">
+            <div class="profile-header">
+                <div class="avatar-placeholder" style="background: linear-gradient(135deg, #a78bfa, #ec4899);">AL</div>
+                <div class="profile-text">
+                    <h1>Andrew Lazo</h1>
+                    <p class="title">Event Coordinator | Media Specialist | Bay Area Native</p>
+                </div>
+            </div>
+            
+            <section class="about-section">
+                <p>Beyond the architectural design and tech stacks, my roots are in high-impact event logistics and digital storytelling. From managing quarter-million-dollar retail inventories at Harborside to directing live television for city administrations, I’ve spent 15+ years ensuring that complex operations run smoothly and stories are told with precision.</p>
+            </section>
+            
+            <div class="contact-info">
+                <a href="mailto:lazo99@gmail.com" class="info-item">
+                    <span class="icon">📧</span>
+                    <span>Connect via Email</span>
+                </a>
+            </div>
+            
+            <section class="expertise-section">
+                <h2>🎭 Event & Media Roots</h2>
+                <ul>
+                    <li><strong>Head Coordinator (ARL LLC):</strong> Oversaw large-scale event logistics, venue sourcing, and budget management to maximize community impact.</li>
+                    <li><strong>Digital Media Specialist:</strong> 15+ years in digital imaging, videography, and non-linear editing.</li>
+                    <li><strong>Operational Excellence:</strong> Managed significant quarterly sales volumes while maintaining high-touch service standards.</li>
+                </ul>
+            </section>
+
+            <footer style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(167, 139, 250, 0.2); text-align: center;">
+                <p style="color: var(--text-muted); font-size: 0.75rem;">
+                    &copy; 2026 Andrew Lazo. All Rights Reserved.
+                </p>
+            </footer>
+        </div>
         
     </main>
 
@@ -131,4 +172,4 @@
     <script src="script.js"></script>
 </body>
 </html>
-<!-- Deployed: Tue May  5 11:30:21 AM PDT 2026 -->
+<!-- Deployed: auto-generated by git -->

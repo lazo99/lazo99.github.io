@@ -4,7 +4,7 @@
 
 ## 1. Grant of License
 
-Subject to the terms of this Agreement, Andrew Lazo ("Architect") grants you ("Licensee") a non-exclusive, non-transferable license to use the CannaPOS software ("Software") solely for internal business operations at authorized locations.
+Subject to the terms of this Agreement, Andrew Lazo ("Architect") grants you ("Licensee") a non-exclusive, non-transferable license to use the ContactPage software ("Software") solely for internal business operations at authorized locations.
 
 ## 2. Restrictions
 
